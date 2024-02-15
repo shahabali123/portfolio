@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgba(240, 255, 255, 0.889);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+hr{
+    color: azure;
+}
+.background{
+    height: 100%;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    /* border: 3px  solid wheat; */
+    background-color: rgba(0, 0, 0, 0.984);
+    position: fixed;
+    z-index: -1;
+}
+header{
+    width: 100%;
+    height: 6rem;
+    background-color: rgba(15, 15, 15, 0.949);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: fixed;
+}
+.logo{
+    height: 70px;
+    width: 70px;
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+}
+a{
+    text-decoration: none;
+}
+.navigation{
+    margin-top: 29px;
+    width: 40%;
+}
+.navigation a{
+    margin: 0 1rem;
+    font-size: 13px;
+}
+select{
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    margin-top: 29px;
+    margin-right: 1rem;
+}
+select option a{
+    color: black;
+}
+.social{
+    display: flex;
+    gap: 1rem;
+}
+.social div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+.github{
+    flex-direction: column;
+}
+.social img{
+    height: 40px;
+    width: 40px;
+}
+.hero-section{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+    
+.description{
+    height: 100%;
+    width: 50%;
+}
+.description p{
+    font-size: 14px;
+}
+
+.hero-section img{
+    height: 17rem;
+    width: 17rem;
+}
+#main{
+    margin-top: 8rem;
+    padding: 2rem;
+    width: 80%;
+    background-color: rgba(240, 248, 255, 0.084);
+    margin-left: 8%;
+}
+
+.skills{
+    height: fit-content;
+    width: 100%;
+    margin-top: 1rem;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.cards div{
+    height: 122px;
+    width: 100px;
+    background-color: rgba(100, 148, 237, 0.111);
+    padding: 1rem;
+    /* text-align: center; */
+    border-radius: 15px;
+    
+}
+.cards p{
+    text-align: center;
+}
+.cards img{
+    align-self: center;
+    height: 80px;
+    width: 80px;
+}
+.cards .express{
+    width: 16rem;
+}
+.cards .express img{
+    width: 14rem;
+}
+
+.projects{
+    margin-top: 1rem;
+}
+.projects div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 16rem;
+    font-size: 13px;
+}
+.daraz img {
+    width: 12rem;
+}
