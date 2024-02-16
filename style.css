@@ -30,9 +30,7 @@ header{
     top: 0;
     width: 100%;
     height: 6rem;
-    background: conic-gradient(midnightblue, darkblue, darkgreen, darkgoldenrod, darkblue, midnightblue);
-    
-    /* background-color: rgb(15, 15, 15); */
+    background: conic-gradient(black, purple, darkgreen, gray, rgb(255, 89, 0), black);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +57,12 @@ a{
 .navigation{
     margin-top: 29px;
     width: 40%;
+}
+.navigation2{
+    display: none;
+}
+.navigation2 i{
+    display: none;
 }
 .navigation a{
     margin: 0 1rem;
@@ -179,14 +183,46 @@ a{
     border-radius: 10px;
 }
 
+
 @media screen and (max-width: 768px) {
     .navigation{
-        display: none;
+       display: none;
+    }
+    .navigation2{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        z-index: 10;
+        padding: 10px;
+        height: 10rem;
+        width: 7.5rem;
+        border-radius: 7px 0 0 7px;
+        background-color: rgba(255, 166, 0, 0.54);
+        margin-top: 40vh;
+        /* margin-left: 90%; */
+        right: -5rem;
+        position: fixed;
+    }
+    .navigation2:hover{
+        right: 0;
+        transition: 1s;
+    }
+    .navigation2 i{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: larger;
+        margin: 10px 0;
+        z-index: 10;
+        cursor: pointer;
+    }
+    .navigation2 i a{
+        text-decoration: none;
+        color: azure;
     }
     .hero-section{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
     .description{
@@ -200,7 +236,7 @@ a{
         width: 8rem;
     }
     #main{
-        margin-top: 3rem;
+        margin-top: 4rem;
         width: 100%;
         margin-left: -2%;
     }
@@ -208,10 +244,11 @@ a{
         height: 4rem;
     }
     header h1{
-        font-size: 0.8rem;
+        font-size: 1.1rem;
+        font-weight: bolder;
     }
     header a{
-        font-size: .5rem;
+        font-size: .7rem;
     }
     .logo{
         display: flex;
