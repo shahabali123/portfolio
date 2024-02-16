@@ -27,6 +27,7 @@ hr{
     z-index: -1;
 }
 header{
+    top: 0;
     width: 100%;
     height: 6rem;
     background-color: rgb(15, 15, 15);
@@ -34,7 +35,13 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    z-index: 1;
     position: fixed;
+    color: rgb(240, 255, 255);
+
+}
+header a{
+    color: rgb(240, 255, 255);
 }
 .logo{
     height: 70px;
@@ -55,7 +62,7 @@ a{
     margin: 0 1rem;
     font-size: 13px;
 }
-select{
+/* select{
     background-color: transparent;
     border: none;
     font-size: 13px;
@@ -64,7 +71,7 @@ select{
 }
 select option a{
     color: black;
-}
+} */
 .social{
     display: flex;
     gap: 1rem;
@@ -89,6 +96,7 @@ select option a{
     height: fit-content;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 10px;
 }
     
 .description{
@@ -104,21 +112,26 @@ select option a{
     width: 17rem;
 }
 #main{
-    margin-top: 8rem;
+    margin-top: 6rem;
     padding: 2rem;
-    width: 80%;
+    width: 65%;
     background-color: rgba(240, 248, 255, 0.084);
-    margin-left: 8%;
+    margin-left: 17.5%;
 }
 
 .skills{
     height: fit-content;
     width: 100%;
     margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 10px;
 }
 .cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
     gap: 1rem;
 }
 .cards div{
@@ -147,6 +160,10 @@ select option a{
 
 .projects{
     margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 10px;
+    justify-content: center;
 }
 .projects div{
     display: flex;
@@ -159,4 +176,14 @@ select option a{
 }
 .daraz img {
     width: 12rem;
+}
+
+.mini-cards{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 10px;
 }
