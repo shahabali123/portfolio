@@ -30,7 +30,8 @@ header{
     top: 0;
     width: 100%;
     height: 6rem;
-    background: conic-gradient(black, purple, darkgreen, gray, rgb(255, 89, 0), black);
+    /* background: conic-gradient(rgb(40, 38, 38), purple, rgb(17, 211, 17), gray, rgb(228, 31, 150), rgb(37, 35, 35)); */
+    background: conic-gradient(purple, orange, purple, orange, purple);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +39,10 @@ header{
     z-index: 1;
     position: fixed;
     color: rgb(240, 255, 255);
+}
+header:hover{
+    /* background: conic-gradient(blue, red, orange, rgb(7, 126, 7) , rgb(155, 155, 3), blue); */
+    transition: 3s ease;
 
 }
 header a{
@@ -50,23 +55,51 @@ header a{
 .logo img{
     height: 70px;
     width: 70px;
+    left: 0.5rem;
 }
+
 a{
     text-decoration: none;
 }
 .navigation{
-    margin-top: 29px;
+    margin-top: 40px;
     width: 40%;
 }
 .navigation2{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    z-index: 10;
+    padding: 10px;
+    height: 13rem;
+    width: 7.5rem;
+    border-radius: 7px 0 0 7px;
+    background-color: rgba(255, 166, 0, 0.54);
+    margin-top: 40vh;
+    /* margin-left: 90%; */
+    right: -5rem;
+    position: fixed;
+}
+.navigation2:hover{
+    right: 0;
+    transition: 1s;
 }
 .navigation2 i{
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    margin: 10px 0;
+    z-index: 10;
+    cursor: pointer;
+}
+.navigation2 i a{
+    text-decoration: none;
+    color: azure;
 }
 .navigation a{
     margin: 0 1rem;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .social{
@@ -194,7 +227,7 @@ a{
         justify-content: baseline;
         z-index: 10;
         padding: 10px;
-        height: 10rem;
+        height: 13rem;
         width: 7.5rem;
         border-radius: 7px 0 0 7px;
         background-color: rgba(255, 166, 0, 0.54);
@@ -270,4 +303,10 @@ a{
         display: flex;
         flex-direction: column;
     }
+}
+@media screen and (max-width: 325px){
+    .email{
+        display: none;
+    }
+
 }
