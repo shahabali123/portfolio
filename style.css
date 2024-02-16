@@ -197,5 +197,37 @@ a{
         height: 8rem;
         width: 8rem;
     }
-    
+    #main{
+        width: 100%;
+        margin-left: -2%;
+    }
+    header{
+        height: 4rem;
+    }
+    header h1{
+        font-size: 0.8rem;
+    }
+    header a{
+        font-size: .5rem;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    header .logo img{
+        height: 3rem;
+        width: 3rem;
+    }
+    header .github img{
+        height: 2rem;
+        width: 2rem;
+    }
+    header .linkedin img{
+        height: 2rem;
+        width: 2rem;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
 }
