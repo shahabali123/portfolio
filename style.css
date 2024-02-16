@@ -62,16 +62,7 @@ a{
     margin: 0 1rem;
     font-size: 13px;
 }
-/* select{
-    background-color: transparent;
-    border: none;
-    font-size: 13px;
-    margin-top: 29px;
-    margin-right: 1rem;
-}
-select option a{
-    color: black;
-} */
+
 .social{
     display: flex;
     gap: 1rem;
@@ -139,9 +130,7 @@ select option a{
     width: 100px;
     background-color: rgba(100, 148, 237, 0.111);
     padding: 1rem;
-    /* text-align: center; */
     border-radius: 15px;
-    
 }
 .cards p{
     text-align: center;
@@ -186,4 +175,27 @@ select option a{
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.678);
     border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation{
+        display: none;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .description{
+        width: 100%;
+    }
+    .description p{
+        font-size: 10px;
+    }
+    .hero-image img{
+        height: 8rem;
+        width: 8rem;
+    }
+    
 }
