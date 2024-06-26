@@ -51,11 +51,14 @@ header a{
 .logo{
     height: 70px;
     width: 70px;
+    border-radius: 50%;
 }
 .logo img{
     height: 70px;
     width: 70px;
     left: 0.5rem;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 a{
@@ -140,6 +143,8 @@ a{
 .hero-section img{
     height: 17rem;
     width: 17rem;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 #main{
     margin-top: 6rem;
@@ -265,9 +270,16 @@ a{
     .description p{
         font-size: 10px;
     }
+    .hero-image{
+        border-radius: 50%;
+        border: 2px solid white;
+
+    }
     .hero-image img{
         height: 8rem;
         width: 8rem;
+        border: 2px solid white;
+        border-radius: 50%;
     }
     #main{
         margin-top: 4rem;
