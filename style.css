@@ -303,6 +303,8 @@ a{
     header .logo img{
         height: 3rem;
         width: 3rem;
+        border-radius: 50%;
+        border: 2px solid white;
     }
     header .github img{
         height: 2rem;
