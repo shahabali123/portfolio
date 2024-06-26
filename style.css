@@ -201,6 +201,7 @@ a{
     gap: 8px;
     width: 16rem;
     font-size: 13px;
+    cursor: pointer;
 }
 .daraz img {
     width: 12rem;
